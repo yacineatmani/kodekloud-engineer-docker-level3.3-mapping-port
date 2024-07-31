@@ -1,0 +1,12 @@
+# Pull the nginx:stable image
+docker pull nginx:stable
+
+# Create and run the container with port mapping
+docker run -d \
+  --name blog \
+  -p 6100:80 \
+  nginx:stable
+
+# Verify the running container
+docker ps
+
